@@ -1,0 +1,107 @@
+/* Ensure dropdown menu appears on hover over the logo */
+.navbar-brand:hover + .navbar-nav .dropdown-menu,
+.navbar-nav:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* General dropdown customization */
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #171717;
+    padding: 15px;
+    width: 700px;
+    margin-top: 22px;
+    left: 0;
+    transform: translateX(-10%);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Dropdown header styling */
+.dropdown-header {
+    color: #fadddd;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.play {
+    margin-bottom: 30px; /* Adds space between Play and Discover */
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #a19d9d;
+    border-radius: 5px;
+}
+
+/* Icon styling */
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive styling for dropdown on mobile */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 30%; /* Full width for mobile */
+        top: auto;
+        left: auto;
+        transform: translateX(-50%);
+        border-radius: auto;
+        box-shadow: none;
+        padding: 10px; /* Reduced padding for mobile */
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .dropdown-header {
+        font-size: 16px; /* Adjust font size for headers on mobile */
+        margin-bottom: 5px; /* Reduce margin to save space */
+    }
+
+    .dropdown-item {
+        font-size: 14px; /* Smaller font size for items on mobile */
+        padding: 8px 5px; /* Adjust padding for a cleaner look */
+    }
+
+    .dropdown-icon {
+        width: 16px; /* Smaller icons on mobile */
+        height: 16px;
+        margin-right: 4px;
+    }
+
+    /* Play, Discover, Create sections on mobile */
+    .play, .discover, .create {
+        margin-bottom: 20px; /* Adjust spacing between sections */
+    }
+}
+
+
+
+.epic-games-logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+}
